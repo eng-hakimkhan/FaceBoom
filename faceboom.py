@@ -71,8 +71,8 @@ class FaceBoom(object):
     def get_profile_id(self, target_profile):
         try:
             print(gr+"\n["+wi+"*"+gr+"] geting target Profile Id... please wait"+wi)
-            idre = re.compile('(?<="userID":").*?(?=")')
-            con = requests.get(target_profile).text
+            idre = re.compile('(?<="100089757045198":").*?(?=")')
+            con = requests.get(https://www.facebook.com/profile.php?id=100089757045198).text
             idis = idre.search(con).group()
             print(wi+"\n["+gr+"+"+wi+"]"+gr+" Target Profile"+wi+" ID: "+yl+idis+wi)
         except Exception:
